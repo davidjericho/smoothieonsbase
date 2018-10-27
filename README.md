@@ -34,6 +34,19 @@ The X motor is wired as:
 | Green | 1A |
 | Black | 1B |
 
+The Z steppers are wired in series.
+
+Following the wiring order from the Y motor plug, the connections flow:
+
+| Start connection | End connection |
+| ---------------- | -------------- |
+| Black on plug | Black on stepper one |
+| Green on stepper one | Black on stepper two |
+| Green on stepper two | Green on plug |
+| Red on plug | Red on stepper one |
+| Blue on stepper one | Red on stepper two |
+| Blue on stepper two | Blue on plug |
+
 ## Pid override tunings
 
 I am using an E3D v6 all metal clone, and a RepRap 330x330 bed. From the telnet console, perform the tuning specified at http://smoothieware.org/temperaturecontrol#pid-autotuning
