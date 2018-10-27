@@ -7,7 +7,7 @@ All my steppers are 17HM19-2004S Nema 17 steppers. These are 0.9 degree, 46Ncm t
 
 I purchased mine from www.omc-stepperonline.com.
 
-They come with hard wired cables into the stepper motors, the wiring pairs being Black/Green, and Red/Blue. 
+They come with hard wired cables into the stepper motors, the wiring pairs being Black/Green, and Red/Blue.
 
 ## Stepper order
 
@@ -18,13 +18,21 @@ The right stepper motor is plugged into the Y socket.
 
 The Y motor is wired as:
 
-| Black | Green | Red | Blue |
-| 2B | 2A | 1A | 1B |
+| Colour | Board pin |
+| ------ | --------- |
+| Black | 2B |
+| Green | 2A |
+| Red | 1A |
+| Blue | 1B |
 
 The X motor is wired as:
 
-| Blue | Red | Green | Black |
-| 2B | 2A | 1A | 1B |
+| Colour | Board pin |
+| ------ | --------- |
+| Blue | 2B |
+| Red | 2A |
+| Green | 1A |
+| Black | 1B |
 
 ## Pid override tunings
 
