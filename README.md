@@ -49,7 +49,11 @@ Following the wiring order from the Y motor plug, the connections flow:
 
 ## Pid override tunings
 
-I am using an E3D v6 all metal clone, and a RepRap 330x330 bed. From the telnet console, perform the tuning specified at http://smoothieware.org/temperaturecontrol#pid-autotuning
+I am using an E3D v6 all metal clone with a short heatsink, and a RepRap 330x330 bed. From the telnet console, perform the tuning specified at http://smoothieware.org/temperaturecontrol#pid-autotuning
+
+## Extruder drive
+
+I abandoned the long bowden setup for a Flex3drive Dual Nozzle unit. Dual print heads, flexible remote drive cable, and a very light hot end. No speed loss, with the benefits of a direct drive. 
 
 ## Firmware image
 
