@@ -80,13 +80,14 @@ pause_button_enable                          true             # Pause button ena
 
 # Extruder module configuration
 extruder.hotend.enable                          true             # Whether to activate the extruder module at all. All configuration is ignored if false
-extruder.hotend.steps_per_mm                    285.567          # Steps per mm for extruder stepper
+#extruder.hotend.steps_per_mm                    285.567          # Steps per mm for extruder stepper - dbot design standard
+extruder.hotend.steps_per_mm                    7600             # Steps per mm for extruder stepper - flex3drive with 0.9 degree steppers
 extruder.hotend.default_feed_rate               600              # Default rate ( mm/minute ) for moves where only the extruder moves
 extruder.hotend.acceleration                    500              # Acceleration for the stepper motor, as of 0.6, arbitrary ratio
 extruder.hotend.max_speed                       50               # mm/s
 
 extruder.hotend.step_pin                        2.3              # Pin for extruder step signal
-extruder.hotend.dir_pin                         0.22!             # Pin for extruder dir signal
+extruder.hotend.dir_pin                         0.22             # Pin for extruder dir signal
 extruder.hotend.en_pin                          0.21             # Pin for extruder enable signal
 
 # extruder offset
@@ -102,7 +103,7 @@ extruder.hotend.en_pin                          0.21             # Pin for extru
 #extruder.hotend.retract_zlift_length            0               # zlift on retract in mm, 0 disables
 #extruder.hotend.retract_zlift_feedrate          6000            # zlift feedrate in mm/min (Note mm/min NOT mm/sec)
 
-delta_current                                1.5              # First extruder stepper motor current
+delta_current                                0.5              # First extruder stepper motor current
 
 # Second extruder module configuration
 #extruder.hotend2.enable                          true             # Whether to activate the extruder module at all. All configuration is ignored if false
@@ -243,7 +244,7 @@ gamma_max                                    320              #
 # optional enable limit switches, actions will stop if any enabled limit switch is triggered
 alpha_limit_enable                          true            # set to true to enable X min and max limit switches
 beta_limit_enable                           true            # set to true to enable Y min and max limit switches
-gamma_limit_enable                          true            # set to true to enable Z min and max limit switches
+gamma_limit_enable                          false            # set to true to enable Z min and max limit switches
 
 alpha_fast_homing_rate_mm_s                  60               # feedrates in mm/second
 beta_fast_homing_rate_mm_s                   60               # "
@@ -252,9 +253,9 @@ alpha_slow_homing_rate_mm_s                  25               # "
 beta_slow_homing_rate_mm_s                   25               # "
 gamma_slow_homing_rate_mm_s                  2                # "
 
-alpha_homing_retract_mm                      5                # distance in mm
-beta_homing_retract_mm                       5                # "
-gamma_homing_retract_mm                      1                # "
+alpha_homing_retract_mm                      1                # distance in mm
+beta_homing_retract_mm                       1                # "
+gamma_homing_retract_mm                      0                # "
 
 #endstop_debounce_count                       100              # uncomment if you get noise on your endstops, default is 100
 
@@ -329,3 +330,11 @@ currentcontrol_module_enable                  true             #
 
 return_error_on_unhandled_gcode              false            #
 
+soft_endstop.enable                         true
+soft_endstop.x_min                          0
+soft_endstop.x_max                          330
+soft_endstop.y_min                          0
+soft_endstop.y_max                          330
+soft_endstop.z_min                          0
+soft_endstop.z_max                          320
+soft_endstop.halt                           false
