@@ -3,11 +3,9 @@ Smoothieware firmware configs for a D-Bot on a MKS Sbase board. I am using 0.9 d
 
 ## Steppers used
 
-All my steppers are 17HM19-2004S Nema 17 steppers. These are 0.9 degree, 46Ncm torque, 2A at 2.8V, 42x42x48mm with 4 wires.
+My X, Y and Z steppers are 17HM19-2004S Nema 17 steppers. These are 0.9 degree, 46Ncm torque, 2A at 2.8V, 42x42x48mm with 4 wires. I purchased mine from www.omc-stepperonline.com. They come with hard wired cables into the stepper motors, the wiring pairs being Black/Green, and Red/Blue.
 
-I purchased mine from www.omc-stepperonline.com.
-
-They come with hard wired cables into the stepper motors, the wiring pairs being Black/Green, and Red/Blue.
+My extruder steppers are generic 1.8 degree steppers with 34Ncm of torque.
 
 ## Stepper order
 
