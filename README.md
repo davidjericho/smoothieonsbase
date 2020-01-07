@@ -59,6 +59,6 @@ I am using a Makerbase TFT32 with this board.
 
 ## Firmware image
 
-`FIRMWARE.CUR` is my presently running image, based on Smoothieware edge 773459d from the 25th of October 2018. Rename it to firmware.bin, and reset the board to flash it. Smoothieware is GPLv3, and the compiled source origin for this binary is https://github.com/Smoothieware/Smoothieware/tree/773459daf126e9eb49adc9f40d9ff18073616997 
+`FIRMWARE.CUR` is my presently running image, based on Smoothieware edge 102ff77 from the 31st of December 2019. Rename it to firmware.bin, and reset the board to flash it. Smoothieware is GPLv3, and the compiled source origin for this binary is https://github.com/Smoothieware/Smoothieware/commit/102ff773bbdbf52315583629ff42809a09c54781
 
 See http://smoothieware.org/sd-card for SD card information.
