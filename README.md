@@ -61,4 +61,6 @@ I am using a Makerbase TFT32 with this board.
 
 `FIRMWARE.CUR` is my presently running image, based on Smoothieware edge 102ff77 from the 31st of December 2019. Rename it to firmware.bin, and reset the board to flash it. Smoothieware is GPLv3, and the compiled source origin for this binary is https://github.com/Smoothieware/Smoothieware/commit/102ff773bbdbf52315583629ff42809a09c54781
 
+Copy config.txt to the SD card along side the firmware.bin file, and the printer will use this as configuration.
+
 See http://smoothieware.org/sd-card for SD card information.
