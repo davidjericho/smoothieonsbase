@@ -80,7 +80,7 @@ pause_button_enable                          true             # Pause button ena
 
 # Extruder module configuration
 extruder.hotend.enable                          true             # Whether to activate the extruder module at all. All configuration is ignored if false
-extruder.hotend.steps_per_mm                    3800             # Steps per mm for extruder stepper - Advice of Mutley3D to use 1.8 degree steppers, not 0.9
+extruder.hotend.steps_per_mm                    837              # Steps per mm for extruder stepper - Advice of Mutley3D to use 1.8 degree steppers, not 0.9
 extruder.hotend.default_feed_rate               600              # Default rate ( mm/minute ) for moves where only the extruder moves
 extruder.hotend.acceleration                    500              # Acceleration for the stepper motor, as of 0.6, arbitrary ratio
 extruder.hotend.max_speed                       50               # mm/s
