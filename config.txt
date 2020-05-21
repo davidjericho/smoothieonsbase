@@ -107,12 +107,12 @@ temperature_control.hotend.enable            true             # Whether to activ
                                                               # All configuration is ignored if false.
 temperature_control.hotend.thermistor_pin    0.24             # Pin for the thermistor to read
 temperature_control.hotend.heater_pin        2.7              # Pin that controls the heater, set to nc if a readonly thermistor is being defined   2.7
-temperature_control.hotend.thermistor        RRRF100K       # see http://smoothieware.org/temperaturecontrol#toc5
-#temperature_control.hotend.beta             3960             # or set the beta value
+temperature_control.hotend.thermistor        Semitec          # see http://smoothieware.org/temperaturecontrol#toc5
+#temperature_control.hotend.beta             4375             # or set the beta value
 temperature_control.hotend.set_m_code        104              #
 temperature_control.hotend.set_and_wait_m_code 109            #
 temperature_control.hotend.designator        T                #
-temperature_control.hotend.max_temp          270
+temperature_control.hotend.max_temp          260
 temperature_control.hotend.runaway_range     20
 temperature_control.hotend.runaway_heating_timeout 180        # If after 180 seconds, temp isn't right, panic and halt
 #temperature_control.hotend.p_factor         13.7             # permanently set the PID values after an auto pid
@@ -125,7 +125,7 @@ temperature_control.bed.enable               true             #
 temperature_control.bed.thermistor_pin       0.23             #
 temperature_control.bed.heater_pin           2.5              #  2.5
 temperature_control.bed.thermistor           RRRF100K    # see http://smoothieware.org/temperaturecontrol#toc5
-temperature_control.bed.max_temp	     80
+temperature_control.bed.max_temp	     100
 temperature_control.bed.runaway_range     10
 temperature_control.bed.runaway_heating_timeout 180           # If after 180 seconds, temp isn't right, panic and halt
 #temperature_control.bed.beta                3960             # or set the beta value
